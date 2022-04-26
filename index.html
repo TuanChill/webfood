@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/CSS/styles.css">
+
+    <title>Web food</title>
+</head>
+<body>
+    <div>
+        <header class="header">
+            <div class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-list__item">
+                        <a class="navbar-list__item-button" href="#slider">Gourmet au Catering</a>
+                    </li>
+                </ul>
+                <ul class="navbar-list navbar-list-content">
+                    <li class="navbar-list__item">
+                        <a class="navbar-list__item-button" href="#about">About</a>
+                        <a class="navbar-list__item-button" href="#menu">Menu</a>
+                        <a class="navbar-list__item-button" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div for="navbar-mobile-bar" class="navbar-list-btn">
+                   <i class="fas fa-bars"></i>
+                </div>
+                <div class="nav__overlay hide">
+                    <div class="overLay"></div>
+                    <nav class="nav__mobile">
+                        <div  class="nav__mobile-close">
+                            <i class="nav__mobile-close-icon fas fa-times"></i>
+                        </div>
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-item">
+                                <a href="#about" class="nav__mobile-item-link">About</a>
+                            </li>
+                            <li class="nav__mobile-item">
+                                <a href="#menu" class="nav__mobile-item-link">Menu</a>
+                            </li>
+                            <li class="nav__mobile-item">
+                                <a href="#contact" class="nav__mobile-item-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div id="slider" class="slider"> 
+            <img src="./assets/img/hamburger.jpg" alt="" class="slider-img">
+            <span class="slider-img-desc">Le Catering</span>
+        </div>
+
+        <div class="content">
+            <!-- about section -->
+            <div id="about" class="about content__item content__item-separate">
+                <div class="img-info content__item-info">
+                    <img src="./assets/img/tablesetting2.jpg" alt="" class="img-desc">
+                </div>
+                <div class="text-info content__item-info">
+                    <h1 class="text-item text-heading">About Catering</h1>
+                    <p class="text-item text-about">Tradition since 1889</p>
+                    <span class=" text-desc text-desc1">
+                        The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="text-special">seasonal</span> ingredients.
+                    </span>
+                    <span class="text-item text-desc text-desc2">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </span>
+                </div>
+            </div>
+            <!-- Menu section -->
+            <div id="menu" class="menu content__item content__item-separate">
+                <div class="text-info content__item-info">
+                    <h1 class="text-item text-heading">Our Menu</h1>
+                    <div class="menu__item-list">
+                        <h4 class="text-menu-item">Bread Basket</h4>
+                        <p class="text-menu__item-desc">Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    </div>
+                    <div class="menu__item-list">
+                        <h4 class="text-menu-item">Honey Almond Granola with Fruits</h4>
+                        <p class="text-menu__item-desc">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                    </div>
+                    <div class="menu__item-list">
+                        <h4 class="text-menu-item">Belgian Waffle</h4>
+                        <p class="text-menu__item-desc">Vanilla flavored batter with malted flour 7.50</p>
+                    </div>
+                    <div class="menu__item-list">
+                        <h4 class="text-menu-item">Scrambled eggs</h4>
+                        <p class="text-menu__item-desc">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                    </div>
+                    <div class="menu__item-list">
+                        <h4 class="text-menu-item">Blueberry Pancakes</h4>
+                        <p class="text-menu__item-desc">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                    </div>
+                </div>
+                <div class="img-info content__item-info">
+                    <img src="./assets/img/tablesetting.jpg" alt="" class="img-desc">
+                </div>
+            </div>
+            <!-- Contact section -->
+            <div id="contact" class="contact content__item">
+                <div class="contact-about">
+                    <h1 class="text-item text-heading">Contact</h1>
+                    <p class="contact__guide">
+                        We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.
+                    </p>
+                    <h3 class="contact__address">Catering Service, 42nd Living St, 43043 New York, NY</h3>
+                    <p class="contact__info">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+                    <form class="contact__info-input">
+                        <input type="text" placeholder="Name" required name="Name" class="contact__info-input-text">
+                        <input type="number" placeholder="How many people" required name="People" class="contact__info-input-text">
+                        <input type="datetime-local" placeholder="Date and time" required name="Date" value="2020-11-16T20:00" class="contact__info-input-text">
+                        <input type="text" placeholder="Message / Special repuirements" required name="Message" class="contact__info-input-text">
+                        <button type="submit" class="btn-submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="footer">
+            <p class="copyright">Powered by <a href="w3.css" class="copyright-link">w3.css</a></p>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
